@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Leads</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="./logo-3tc.jpg" alt="Logo 3TC Isolamento">
+      <h1>Formulário de Leads</h1>
+      <span>Preencha os dados abaixo para registrar o lead no Marketing</span>
+      <p class="info-obrigatorio">Campos marcados com * são obrigatórios.</p>
+    </header>
+
+    <form action="" method="POST">
+      <!-- Nome do cliente -->
+      <label for="nome_cliente">Nome do cliente*</label>
+      <input type="text" id="nome_cliente" name="nome_cliente" required>
+
+      <!-- Origem -->
+      <label for="origem">Origem*</label>
+      <select id="origem" name="origem" required>
+        <option value="Marketing" selected>Marketing</option>
+      </select>
+
+      <!-- Segmento Marketing -->
+      <label for="segmento">Segmento Marketing*</label>
+      <select id="segmento" name="segmento" required>
+        <option value="">Selecione...</option>
+        <option value="Agronegocio">Agronegócio</option>
+        <option value="Construtora">Construtora</option>
+        <option value="Galpao">Galpão</option>
+        <option value="Farmaceutica">Farmacêutica</option>
+        <option value="Logistica">Logística</option>
+        <option value="Supermercado">Supermercado</option>
+        <option value="Outro">Outro</option>
+        <option value="Industria">Indústria</option>
+        <option value="PessoaFisica">Pessoa física</option>
+      </select>
+
+      <!-- Segmento Comercial -->
+      <label for="segmento_comercial">Segmento Comercial*</label>
+      <select id="segmento_comercial" name="segmento_comercial" required>
+        <option value="">Selecione...</option>
+        <option value="Administradora">Administradora</option>
+        <option value="Agro">Agro</option>
+        <option value="Comercio">Comércio</option>
+        <option value="Distribuicao">Distribuição</option>
+        <option value="Fabricacao">Fabricação</option>
+        <option value="Industria">Indústria</option>
+        <option value="Infraestrutura">Infraestrutura</option>
+        <option value="Logistica">Logística</option>
+        <option value="Serviços">Serviços</option>
+        <option value="Varejo">Varejo</option>
+      </select>
+
+      <!-- Subsegmento (opcional) -->
+      <label for="subsegmento">Subsegmento*</label>
+      <select id="subsegmento" name="subsegmento">
+        <option value="">Selecione...</option>
+        <option value="Agropecuaria">Agro Agropecuária</option>
+        <option value="Agrogranja">Agro Granja</option>
+        <option value="Agrosementes">Agro Sementes</option>
+        <option value="Bau">Baú</option>
+        <option value="ComercioAcademia">Comércio Academia</option>
+        <option value="ComercioOficina">Comércio Oficina</option>
+        <option value="ComercioTecnologia">Comércio Tecnologia</option>
+        <option value="Container">Container</option>
+        <option value="DistribuicaoRevenda">Distribuição Revenda</option>
+        <option value="FabricadeMoveis">Fábrica de Móveis</option>
+        <option value="FabricacaoParticular">Fabricação Particular</option>
+        <option value="FabricacaoRodoviaria">Fabricação Rodoviária</option>
+        <option value="FabricacaoVeiculos">Fabricação Veículos</option>
+        <option value="FabricacaoEquipamentos">Fabricação de Equipamentos</option>
+        <option value="Farmaceutica">Farmacêutica</option>
+        <option value="Furgao">Furgão</option>
+        <option value="Imobiliaria">Imobiliária</option>
+        <option value="IndustriaAcopecuaria">Indústria Acopecuária</option>
+        <option value="IndustriaAlimenticia">Indústria Alimentícia</option>
+        <option value="IndustriaCosmetica">Indústria Cosmética</option>
+        <option value="IndustriaCosmeticos">Indústria Cosméticos</option>
+        <option value="InfraestruturaArquitetura">Infraestrutura Arquitetura</option>
+        <option value="InfraestruturaConstrucaoCivil">Infraestrutura Construção Civil</option>
+        <option value="InfraestruturaEngenharia">Infraestrutura Engenharia</option>
+        <option value="InfraestruturaEstruturaMetalica">Infraestrutura Estrutura Metálica</option>
+        <option value="LimpezaManutencao">Limpeza e Manutenção</option>
+        <option value="LogisticaFarmaceutica">Logística Farmacêutica</option>
+        <option value="LogisticaGeral">Logística Geral</option>
+        <option value="LogisticaAgropecuaria">Logística Agropecuária</option>
+        <option value="LogisticaAlimenticia">Logística Alimentícia</option>
+        <option value="Motorhome">Motorhome</option>
+        <option value="Outros">Outros</option>
+        <option value="Pesada">Pesada</option>
+        <option value="Quimicos">Produtos Químicos</option>
+        <option value="ProjetoParticular">Projeto Particular</option>
+        <option value="Textil">Têxtil</option>
+        <option value="Tintas">Tintas</option>
+        <option value="VarejoAtacadista">Varejo Atacadista</option>
+        <option value="VarejoHipermercado">Varejo Hipermercado</option>
+        <option value="VarejoHortifruti">Varejo Hortifruti</option>
+        <option value="VarejoMercado">Varejo Mercado</option>
+        <option value="VarejoSupermercado">Varejo Supermercado</option>
+      </select>
+
+      <!-- E-mail -->
+      <label for="email">E-mail*</label>
+      <input type="email" id="email" name="email" required>
+
+      <!-- Telefone -->
+      <label for="telefone">Telefone*</label>
+      <input type="tel" id="telefone" name="telefone" maxlength="11" required>
+
+      <!-- Evento de conversão -->
+      <label for="evento_conversao">Evento de conversão*</label>
+      <select id="evento_conversao" name="evento_conversao" required>
+        <option value="">Selecione...</option>
+        <option value="whatsapp">Whatsapp</option>
+        <option value="ligacao">Ligação</option>
+        <option value="e-mail">E-mail</option>
+        <option value="instagram">Instagram</option>
+        <option value="youtube">Youtube</option>
+      </select>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
