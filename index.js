@@ -3,6 +3,7 @@
     const telaSucesso = document.getElementById('tela-sucesso');
     const telaErro = document.getElementById('tela-erro');
     const btn = document.getElementById('enviarlead');
+    const PLOOMES_URL = 'https://app10.ploomes.com/';
 
     // SIMULAÇÃO: e-mails já cadastrados
     const emailsCadastrados = ['teste@teste.com', 'lead@3tc.com.br'];
@@ -11,6 +12,10 @@
       telaForm.style.display = 'none';
       telaErro.style.display = 'none';
       telaSucesso.style.display = 'block';
+      
+      setTimeout(() => {
+      window.location.href = PLOOMES_URL;
+    },2000);
     }
 
     function mostrarTelaErro() {
